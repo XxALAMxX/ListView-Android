@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/btStop"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.listviewmusica.MainActivity" >
+
+    <Button
+        android:id="@+id/btPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btPlay"
+        android:layout_alignBottom="@+id/btPlay"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/btPlay"
+        android:text="@string/btPause" />
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btPause"
+        android:layout_alignBottom="@+id/btPause"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/btPause"
+        android:text="@string/btStop" />
+
+    <ListView
+        android:id="@+id/lvCanciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btPause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lvCanciones"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btPlay" />
+
+</RelativeLayout>
